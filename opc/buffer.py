@@ -115,8 +115,12 @@ class OPCBuffer(object):
 
     @timefunc
     def copyImage(self, image):
+        # after NumPy v1.15, the write flag's behavior changed.
+        # we can't set the write flag, but we can copy buf.
+        # it's a cheap hack but it works.
         self.buf = np.asarray(image)
-        self.buf.setflags(write=True)
+        # self.buf.setflags(write=True)
+        self.buf = self.buf.copy()
 
     @timefunc
     def scaledCopy(self, source):

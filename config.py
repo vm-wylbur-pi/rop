@@ -2,7 +2,7 @@
 Display Configuration
 """
 # Display Geometry
-WIDTH, HEIGHT = 32, 32
+WIDTH, HEIGHT = 16, 60
 
 # Device type and address, where 'address' is an optional colon-separated
 # part of the value that is driver dependent
