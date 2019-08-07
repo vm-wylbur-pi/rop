@@ -33,4 +33,4 @@ class Art(ArtBaseClass):
         self.phase += 0.02
 
     def interval(self):
-        return 70
+        return 45

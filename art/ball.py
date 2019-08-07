@@ -14,7 +14,7 @@ class Art(ArtBaseClass):
         self.radius = sqrt(matrix.numpix)/16
         self.x = self.radius
         self.dx = 5
-        self.timeslice = 50  # ms
+        self.timeslice = 100  # ms
         self.scale = 0.1
         self.dt = 100/self.timeslice*self.scale
         self.accel = 9.8

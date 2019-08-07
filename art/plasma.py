@@ -43,4 +43,4 @@ class Art(ArtBaseClass):
         self.base += 0.1
 
     def interval(self):
-        return 60
+        return 30

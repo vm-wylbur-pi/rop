@@ -45,4 +45,4 @@ class Art(ArtBaseClass):
         matrix.fillRect(x-self.radius, y-self.radius, 2*self.radius, 2*self.radius, color)
 
     def interval(self):
-        return 40
+        return 80
